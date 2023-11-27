@@ -1,0 +1,68 @@
+package oopsbasic;
+
+public class NonStaticVariable {
+	public void nonStaticVariable() {
+		System.out.println("Any global variable which is not prefix with static keyword is called non-static variable.");
+		System.out.println();
+		System.out.println("* NOTE : ");
+		System.out.println("  1. Non static variable cannot be access inside static context directly.");
+		System.out.println("  2. Non static variable cannot be access in static context with help of class name.");
+		System.out.println("  3. Non static variable can be access only with the help of object.");
+		System.out.println();
+		System.out.println("* Q. What is Object?");
+		System.out.println("	It is block of memory created inside HEAP area during runtime.");
+		System.out.println();
+		System.out.println("* Q. How to create an object?");
+		System.out.println("\tWith help of new keyword. Syntax new ClassName();");
+		System.out.println("\t* Every time we use new keyword there will be new object created with the unique address in heap area.");
+		System.out.println();
+		System.out.println("* new keyword.");
+		System.out.println("\t1. new is a keyword.");
+		System.out.println("\t2. new is an unary operator.");
+		System.out.println("\t3. new keyword creates a block of memory inside heap area during runtime.");
+		System.out.println("\t4. new keyword operator returns address of an object.");
+		System.out.println();
+		System.out.println("* NOTE : ");
+		System.out.println("\t1. Whenever we write new always new object will be created and it returns new object.");
+		System.out.println("\t2. For a class we can create any number of objects.");
+		System.out.println();
+		System.out.println("e.g., printing address of an object.");
+		System.out.println("Address of an object using new keyword : " + new NonStaticVariable());
+		System.out.println();
+		System.out.println("* Q. How to store address of address of an object?");
+		System.out.println("  A: Syntax : NonPrimitiveDatatype referenceVariable = new NonPrimitiveDatatype();");
+		NonStaticVariable nonStaticVariable = new NonStaticVariable();
+		System.out.println("Address of an object stored inside nonStaticVariable reference variable : " + nonStaticVariable);
+		System.out.println();
+		System.out.println("* Q. Difference between Primitive Variable and Non Primitive Variable or reference variable.");
+		System.out.println("Primitive Variable.");
+		System.out.println("\t1. Primitive variable is created using primitive datatype.");
+		System.out.println("\t2. Primitive variable used to store data.");
+		System.out.println();
+		System.out.println("Non Primitive Variable.");
+		System.out.println("\t1. Non Primitive Variable is created using non-primitive datatype.");
+		System.out.println("\t2. Non Primitive Variable is used to store address of an object.");
+		System.out.println();
+		System.out.println("* Q. How to access non-static members inside static context (method) ?");
+		System.out.println("  A: With the help of object reference.");
+		System.out.println();
+		System.out.println("* Q. How many ways we can use static members inside static context ?");
+		System.out.println("  A: 3 Ways : 1. Directly, 2. ClassName, 3. Object Reference.");
+		System.out.println();
+		System.out.println("* Q. Difference between static variable and non static variable.");
+		System.out.println("* Static Variables");
+		System.out.println("\t1. Static Variable prefix with static keyword.");
+		System.out.println("\t2. Any variable declared inside global area prefix with static keyword known as static variable.");
+		System.out.println("\t3. Static variable can be access by 3 ways, a. Direclty, b. ClassName, c. Object Reference.");
+		System.out.println("\t4. Static Variables will have same memory allocation for every object.");
+		System.out.println("\t5. Static variable stored inside class static area.");
+		System.out.println("\t6. It is not mandatory to create object.");
+		System.out.println();
+		System.out.println("* Non Static Variables");
+		System.out.println("\t1. Non-static variable are nto prefix with static keyword.");
+		System.out.println("\t2. Any varialb declared inside global area are not prefix with static keyword is known as non-static variable.");
+		System.out.println("\t3. Non-static variables will have different memory allocation for every object.");
+		System.out.println("\t4. Non-static varialbes stored inside object (Heap Area).");
+		System.out.println("\t5. To access Non-static variable it is mandatory to create object.");
+	}
+}
